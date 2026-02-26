@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+        section {
+            padding: 40px;
+        }
+        .services div {
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Company Name</h1>
+    <p>Professional Services You Can Trust</p>
+    <a href="#contact" class="btn">Contact Us</a>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>Short description about the company and what they do.</p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div>✔ Service One</div>
+    <div>✔ Service Two</div>
+    <div>✔ Service Three</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 012-345-6789</p>
+    <p>Email: info@company.com</p>
+</section>
+
+<footer>
+    © 2026 Company Name. All Rights Reserved.
+</footer>
+
+</body>
+</html>
