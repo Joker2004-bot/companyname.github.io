@@ -1,115 +1,142 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Delta Flex Construction</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0b0f1a;
+        color: #ffffff;
+    }
 
-        header {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    /* NAVIGATION */
+    nav {
+        background: #05070d;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+    nav h3 {
+        color: #00aaff;
+        margin: 0;
+    }
 
-        header p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+    }
 
-        .btn {
-            background: #f39c12;
-            color: white;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
+    nav a:hover {
+        color: #00aaff;
+    }
 
-        section {
-            padding: 50px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+    /* HERO SECTION */
+    header {
+        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                    url("solar-install.jpg");
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 120px 20px;
+    }
 
-        h2 {
-            margin-bottom: 20px;
-        }
+    header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #00aaff;
+    }
 
-        .services div {
-            background: white;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-left: 5px solid #f39c12;
-        }
+    header p {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
 
-        .contact-box {
-            background: #111;
-            color: white;
-            padding: 30px;
-            text-align: center;
-        }
+    .btn {
+        background: #007bff;
+        color: white;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
 
-    </style>
-</head>
-<body>
+    .btn:hover {
+        background: #0056b3;
+    }
 
-<header>
-    <h1>Delta Flex Construction</h1>
-    <p><strong>We Get It Done.</strong></p>
-    <a href="#contact" class="btn">Call Now</a>
-</header>
+    section {
+        padding: 70px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
 
-<section>
-    <h2>About Us</h2>
-    <p>
-        Delta Flex Construction is a hardworking, self-driven construction company
-        committed to delivering reliable and high-quality workmanship.
-        We take pride in getting the job done right — on time and on budget.
-    </p>
-    <p>
-        Led by CEO Quintus Van Der Berg, we bring dedication, skill,
-        and professional service to every project.
-    </p>
-</section>
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #00aaff;
+    }
 
-<section class="services">
-    <h2>Our Services</h2>
+    /* ABOUT */
+    .about p {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+    }
 
-    <div><strong>Electrical Installations & Repairs</strong></div>
-    <div><strong>Solar Installations</strong></div>
-    <div><strong>COC (Certificate of Compliance)</strong></div>
-    <div><strong>General Construction & Building</strong></div>
+    /* SERVICES */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
 
-</section>
+    .service-box {
+        background: #121826;
+        padding: 25px;
+        border-radius: 8px;
+        border-left: 4px solid #007bff;
+        transition: 0.3s;
+    }
 
-<section>
-    <h2>Service Area</h2>
-    <p>
-        Based primarily in Gauteng, we are available for projects
-        throughout South Africa.
-    </p>
-</section>
+    .service-box:hover {
+        transform: translateY(-5px);
+    }
 
-<section id="contact" class="contact-box">
-    <h2>Contact Us</h2>
-    <p><strong>CEO:</strong> Quintus Van Der Berg</p>
-    <p><strong>Phone:</strong> 072 213 0137</p>
-    <p>Call today for a quote.</p>
-</section>
+    /* PROJECT IMAGE SECTION */
+    .project {
+        text-align: center;
+    }
 
-</body>
-</html>
+    .project img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 0 25px rgba(0,123,255,0.3);
+    }
+
+    /* CONTACT */
+    .contact-box {
+        background: #05070d;
+        padding: 50px 20px;
+        text-align: center;
+        border-top: 3px solid #007bff;
+    }
+
+    .contact-box p {
+        margin: 10px 0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+        background: #000;
+        color: #777;
+    }
+
+</style>
